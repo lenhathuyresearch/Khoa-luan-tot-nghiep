@@ -1,6 +1,0 @@
-﻿Các siêu tham số,LSTM,GRU,BiLSTM
-unit,60,30,50
-activation,tanh,tanh,relu
-learning_rate,0.001,0.001,0.0001
-epochs,250,250,250
-batch_size,32,32,32
