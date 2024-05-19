@@ -1,9 +1,8 @@
-
 #Load libraries needed
 import streamlit as st
 import pandas as pd
 import numpy as np
-import joblib
+# import joblib
 # from streamlit_lottie import st_lottie
 from datetime import datetime
 import seaborn as sns
@@ -117,7 +116,7 @@ with prediction:
                                 "Mô hình GRU",
                                 "Mô hình BiLSTM"])
         if opt2 == "Mô hình LSTM":
-            bang3 = pd.read_excel("Dataset/" + folder + "/" + option2 + "/data_test.csv")
+            bang3 = pd.read_csv("Dataset/" + folder + "/" + option2 + "/data_test.csv")
             st.markdown("### Bảng dữ liệu thực tế và dữ liệu dự đoán bằng mô hình LSTM")
             st.write(bang3[['Thực tế', 'Dự đoán theo LSTM']])
             st.markdown("### Biều đồ dữ liệu thực tế và dữ liệu dự đoán bằng mô hình LSTM")
