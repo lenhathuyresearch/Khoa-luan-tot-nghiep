@@ -79,16 +79,19 @@ with intro:
     option3 = st.selectbox("Các mô hình ",
                           ["Mô hình LSTM",
                            "Mô hình GRU",
-                           "Mô hình BiLSTM"])
+                           "Mô hình BiLSTM",
+                           "Mô hình Convolutional LSTM"])
     st.markdown("### "+option3)
     link_image = "images/"
     if option3 == "Mô hình LSTM":
         st.image("images/lstm.gif")
     elif option3 == "Mô hình GRU":
         st.image("images/gru.gif")
-    else:
+    elif option3 == "Mô hình BiLSTM":
         st.image("images/bilstm1.gif")
         st.image("images/bilstm.gif")
+    else:
+        st.image("images/ConvLSTM.png")
 
 with prediction:
     prediction.markdown("## 2.Kết quả")
