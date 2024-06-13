@@ -1,4 +1,5 @@
 #Load libraries needed
+import streamlit
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -103,6 +104,9 @@ with prediction:
     with tab1:
         st.markdown("### Danh sách các siêu tham số của mô hình " + " sử dụng")
         st.write(hps)
+        st.write("Riêng về ConvLSTM:")
+        st.write("Kích thước kernel = 1")
+        st.write("Số bộ lọc filters = 64")
     with tab2:
         st.markdown("### Bảng kết quả trên tập huấn luyện")
         bang1 = pd.read_csv("Dataset/" + folder + "/" + option2 + "/train_eval.csv")
