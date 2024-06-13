@@ -53,7 +53,7 @@ giangvien = """
 
 sinhvien = """
 <div class="container slide-in-animation">
-<h3>Sinh viên thực hiện: Lê Nhật Huy</h3>
+<h3>Sinh viên thực hiện: LÊ NHẬT HUY</h3>
 </div>
 """
 
